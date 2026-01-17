@@ -147,9 +147,7 @@ Normalmente expuesto mediante Nginx Proxy Manager o dominio interno.
 
 - CasaOS
 
-- Nginx Proxy Manager
-
 ## 👤 Autor
 
-Sebastián Sánchez
+Sebastián Sánchez  
 Proyecto personal – Ecosistema Gastor
