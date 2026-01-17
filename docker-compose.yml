@@ -1,0 +1,29 @@
+services:
+  gastor-api-prd:
+    build: .
+    container_name: gastor-api-prd
+    profiles: ["prd"]
+    ports: ["8000:8000"]
+    env_file: ["prd.api.env"]
+    networks: ["postgresql_prd_net"]
+    volumes:
+      - "/DATA/File System/movimientos_fotos:/files/movimientos_fotos"
+
+  gastor-api-dev:
+    build: .
+    container_name: gastor-api-dev
+    profiles: ["dev"]
+    ports: ["8001:8000"]
+    env_file: ["dev.api.env"]
+    networks: ["postgresql_dev_net"]
+    volumes:
+      - "/DATA/File System/movimientos_fotos_dev:/files/movimientos_fotos"
+
+networks:
+  postgresql_prd_net:
+    external: true
+    name: postgresql_prd_net
+    
+  postgresql_dev_net:
+    external: true
+    name: postgresql_dev_net

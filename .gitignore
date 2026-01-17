@@ -1,0 +1,14 @@
+# Env files (reales)
+dev.env
+prd.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Docker
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
