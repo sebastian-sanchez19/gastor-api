@@ -24,11 +24,11 @@ API backend del ecosistema **Gastor**, desarrollada en **Flask** y desplegada me
 
 ## 🧱 Arquitectura general
 
-GastorApp (Angular)
-↓
-Gastor API (Flask)
-↓
-Gastor DB (PostgreSQL) 
+GastorApp (Angular)  
+↓  
+Gastor API (Flask)  
+↓  
+Gastor DB (PostgreSQL)
 
 Los archivos de imágenes se almacenan en el servidor mediante volúmenes Docker.
 
